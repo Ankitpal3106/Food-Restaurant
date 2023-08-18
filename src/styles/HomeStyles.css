@@ -1,0 +1,100 @@
+.Home{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Headercontainer{
+    width: auto;
+    margin-left: 30px;
+}
+
+.Home .Headercontainer h1{
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color:#fff; */
+    background-image: url('/src/images/yello.jpg');
+            background-size: cover;
+            background-position: center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+}
+
+.Home .Headercontainer p{
+    margin-top: 15px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.Home .Headercontainer button{
+    background-color: rgb(31, 30, 27);
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all ease 0.5s;
+}
+
+.Headercontainer button:hover{
+    box-shadow: 5px 5px 0px;
+    /* background-color:#fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease-in; */
+
+}
+
+@media only screen and (max-width: 600px){
+        .Home{
+            justify-content: center;
+            align-items: center;
+        }
+        .Headercontainer{
+            margin-left: 0;
+            border-radius: 10px;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #121619;
+            color: #fff;
+            
+        }
+
+          .Home .Headercontainer h1{
+            font-size: 40px;
+            height: 30px;
+            margin: 30px 0px;
+            color: #fff;
+
+        }
+
+        .Home .Headercontainer p{
+            font-size: 30px;
+            color: #fff;
+
+        }
+
+        .Headercontainer button{
+            background-color: #fff;
+            color: #000;
+            margin-bottom: 30px;
+        }
+}
